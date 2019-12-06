@@ -7,7 +7,7 @@ import cors from 'cors';
 
 // import { SERVER_PORT } from "./global/environment";
 
-const server = new Server();
+const server = Server.instance;
 
 //Body Parser
 server.app.use(bodyParser.urlencoded({extended: true}));
